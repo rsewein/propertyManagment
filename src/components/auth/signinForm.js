@@ -43,7 +43,7 @@ class SigninForm extends Component {
 }
 
 SigninForm = reduxForm({
-    form: 'sigin'
+    form: 'signin'
 })(SigninForm);
 
 export default SigninForm;
