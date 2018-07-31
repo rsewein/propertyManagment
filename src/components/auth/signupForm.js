@@ -1,18 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 
@@ -22,8 +7,11 @@ import TextLink from '../textLink';
 
 class SigninForm extends Component {
     render() {
+
+        const { handleSubmit } = this.props;
+
         return (
-            <form className="sign-up-form">
+            <form onSubmit={handleSubmit} className="sign-up-form">
                 <FormTitle className="sign-up-form__title" text="New User" />
                 <Field
                     className="sign-up-form__fullname"
