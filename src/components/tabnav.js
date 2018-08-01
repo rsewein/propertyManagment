@@ -17,7 +17,7 @@ class TabNav extends Component {
                         this.props.tabs.map((tab, index) => {
                             if(tab.active) {
                                 return (
-                                    tab.component
+                                    <div key={index}>{tab.component}</div>
                                 )
                             }
                         })
