@@ -22,6 +22,9 @@ import Signin from './components/auth/signin';
 // DASHBOARD
 import Dashboard from './components/dashboard';
 
+// NEWSLETTER
+import NewNewsletter from './components/newsletter/newsletterNew';
+
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
@@ -31,7 +34,9 @@ function main() {
             <Route path='/' exact component={Signin}/>
             <Route path='/signin' component={Signin}/>
             <Route path='/signup' component={Signup}/>
+            {/* requre Authenticated Account/Signed Up/Signed In */}
             <Route path='/dashboard' component={requireAuth(Dashboard)}/>
+            <Route path='/newsletter/new' component={requireAuth(NewNewsletter)}/>
           </Layout>
         </Switch>
       </Router>
