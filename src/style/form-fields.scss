@@ -79,7 +79,7 @@
         text-align: center;
     }
     &__danger {
-        border: none;
+        border: 1px solid $color-red-d7;
         color: white;
         background-color: $color-red-d7;
     }
