@@ -66,3 +66,21 @@
         text-align: center;
     }
 }
+
+.form-button-small {
+    &__button {
+        border-radius: 1.6rem;
+        border: 1px solid $color-grey-4d;
+        width: 13rem;
+        height: 2.4rem;
+    
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        text-align: center;
+    }
+    &__danger {
+        border: none;
+        color: white;
+        background-color: $color-red-d7;
+    }
+}
