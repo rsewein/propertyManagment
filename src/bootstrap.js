@@ -33,14 +33,18 @@ function main() {
       <Router history={history}>
         <Switch>
           <Layout>
+            {/* AUTH */}
             <Route path='/' exact component={Signin}/>
             <Route path='/signin' component={Signin}/>
             <Route path='/signup' component={Signup}/>
-            {/* requre Authenticated Account/Signed Up/Signed In */}
+            {/* DASHBOARD */}
             <Route path='/dashboard' component={requireAuth(Dashboard)}/>
+            {/* NEWSLETTER */}
             <Route path='/newsletter/new' component={requireAuth(NewNewsletter)}/>
             <Route path='/newsletter/edit/:id' component={requireAuth(EditNewsletter)}/>
             <Route path='/newsletter/detail/:id' component={requireAuth(NewsletterDetail)}/>
+            {/* REQUESTS */}
+            <Route path='/request/new' component={requireAuth(NewNewsletter)}/>
           </Layout>
         </Switch>
       </Router>
