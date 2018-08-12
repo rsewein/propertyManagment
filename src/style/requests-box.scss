@@ -58,3 +58,33 @@
         border-left: none;
     }
 }
+
+.requests-box-active {
+     background-color: $color-red-d7;
+     border-color: $color-red-d7;
+
+     .requests-box {
+         &__title,
+         &__count {
+            color: white;
+         }
+         &__point {
+            background-color: $color-red-d7;
+            border-color: $color-red-d7;
+         }
+     }
+}
+
+.requests-box-inactive {
+    border-color: $color-grey-e6;
+
+    .requests-box {
+        &__title,
+        &__count {
+            color: $color-grey-4d;
+        }
+        &__point {
+            display: none;
+        }
+    }
+}
