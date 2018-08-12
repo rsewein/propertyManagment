@@ -3,14 +3,14 @@
     grid-row: content-s/content-e;
 
     display: grid;
-    grid-template-rows: [button-s] 4.7rem [button-e s box-s] 16rem [box-e archive-s] 1fr [archive-e e];
-    grid-template-columns: [box-s archive-s] 16rem [box-e archive-e latest-s] 960px [latest-e];
+    grid-template-rows: [button-s] 4.7rem [button-e s box-s] 1fr [box-e e];
+    grid-template-columns: [box-s] 16rem [box-e request-s] 960px [request-e];
 
     grid-column-gap: 6.1rem;
 
     &__button {
         grid-row: button-s/button-e;
-        grid-column: latest-s/latest-e;
+        grid-column: request-s/request-e;
         justify-self: end;
         align-self: center;
         margin-right: 1rem;

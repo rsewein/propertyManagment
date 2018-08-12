@@ -11,12 +11,12 @@ class Dashboard extends Component {
             tabs: [
                 {
                     title: 'Newsletter',
-                    active: true,
+                    active: false,
                     component: <NewsletterGrid history={this.props.history}/>
                 },
                 {
                     title: 'Requests',
-                    active: false,
+                    active: true,
                     component: <RequestsGrid history={this.props.history}/>
                 }
             ]
